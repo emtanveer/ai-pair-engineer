@@ -1,10 +1,21 @@
-# AI Pair Engineer - Careem Optional AI Challenge Submission
+# AI Pair Engineer
+
 ![Android](https://img.shields.io/badge/Android-Kotlin-green)
 ![Architecture](https://img.shields.io/badge/CLEAN-Architecture-blue)
 ![AI](https://img.shields.io/badge/AI-Assisted-orange)
 ![Careem](https://img.shields.io/badge/Careem-AI_Challenge-brightgreen)
 
-## Candidate
+## AI-Assisted Android Architecture & Code Quality Companion
+
+---
+
+# Vision
+
+The future of software engineering is AI-augmented development — where AI accelerates engineering workflows while experienced engineers remain responsible for architecture, business logic, scalability, and product decisions.
+
+---
+
+# Candidate
 
 **Muhammad Tanveer**
 Senior Staff Software Engineer – Android
@@ -12,15 +23,7 @@ Karachi, Pakistan
 
 ---
 
-# Project Title
-
-# AI Pair Engineer
-
-### AI-Assisted Android Architecture & Code Quality Companion
-
----
-
-# 1. Overview
+# Overview
 
 AI Pair Engineer is an AI-assisted software engineering companion designed to help Android development teams improve code quality, maintainability, scalability, and development velocity.
 
@@ -42,11 +45,7 @@ The goal is not to replace human engineers, but to augment development workflows
 
 ---
 
-# Vision
-
-The future of software engineering is AI-augmented development — where AI accelerates engineering workflows while experienced engineers remain responsible for architecture, business logic, scalability, and product decisions.
-
-# 2. Problem Statement
+# Problem Statement
 
 Modern Android applications have become increasingly complex due to:
 
@@ -78,7 +77,7 @@ AI Pair Engineer aims to bridge this gap.
 
 ---
 
-# 3. Proposed Solution
+# Proposed Solution
 
 AI Pair Engineer reviews Kotlin and Android code snippets using an AI-powered engineering review workflow.
 
@@ -104,7 +103,7 @@ This creates a faster and more consistent engineering review process.
 
 ---
 
-# 4. Key Features
+# Key Features
 
 ## Architecture Review
 
@@ -155,32 +154,12 @@ This creates a faster and more consistent engineering review process.
 
 ---
 
-# 5. Why This Matters
-
-Large-scale engineering organizations need:
-
-* consistent engineering standards
-* scalable review workflows
-* faster onboarding
-* architecture governance
-* reduced technical debt
-
-AI Pair Engineer can help teams:
-
-* reduce review cycles
-* improve engineering consistency
-* catch issues earlier
-* improve maintainability
-* accelerate developer productivity
-
----
-
-# 6. Example AI Review Prompt
+# Example AI Review Prompt
 
 ```text
 You are a Senior Android Staff Engineer performing a production-grade code review.
 
-Review the provided Kotlin code for:
+Review the provided Kotlin Android code for:
 
 1. Architecture quality
 2. Readability and maintainability
@@ -206,9 +185,7 @@ Code:
 
 ---
 
-# 7. Example Input
-
-## Sample Kotlin Code
+# Example Input
 
 ```kotlin
 class UserViewModel : ViewModel() {
@@ -227,7 +204,7 @@ class UserViewModel : ViewModel() {
 
 ---
 
-# 8. Example AI Review Output
+# Example AI Review Output
 
 ```text
 Summary:
@@ -262,7 +239,7 @@ The implementation is concise and readable, making it a strong starting point fo
 
 ---
 
-# 9. Improved Refactored Version
+# Improved Refactored Version
 
 ```kotlin
 @HiltViewModel
@@ -301,7 +278,7 @@ class UserViewModel @Inject constructor(
 
 ---
 
-# 10. High-Level System Design
+# High-Level System Design
 
 ## Workflow
 
@@ -314,7 +291,7 @@ class UserViewModel @Inject constructor(
 
 ---
 
-# 11. Proposed Technical Stack
+# Proposed Technical Stack
 
 | Layer           | Technology                  |
 | --------------- | --------------------------- |
@@ -328,9 +305,7 @@ class UserViewModel @Inject constructor(
 
 ---
 
-# 12. Android Engineering Focus Areas
-
-The assistant is intentionally optimized for Android-specific engineering challenges:
+# Android Engineering Focus Areas
 
 ## Jetpack Compose
 
@@ -369,62 +344,7 @@ The assistant is intentionally optimized for Android-specific engineering challe
 
 ---
 
-# 13. Example Advanced Review Cases
-
-## Example 1 — Compose Recomposition Issue
-
-### Input
-
-```kotlin
-LazyColumn {
-    items(users) {
-        UserItem(user = it)
-    }
-}
-```
-
-### AI Recommendation
-
-* Consider using stable keys inside LazyColumn
-* Ensure User model is immutable
-* Avoid unnecessary recompositions by using remember where appropriate
-
----
-
-## Example 2 — Coroutine Issue
-
-### Input
-
-```kotlin
-runBlocking {
-    api.fetchData()
-}
-```
-
-### AI Recommendation
-
-* Avoid runBlocking on Android main thread
-* Replace with suspend functions and structured concurrency
-* Use lifecycle-aware scopes
-
----
-
-# 14. Business Impact
-
-Potential benefits for engineering teams:
-
-| Area            | Impact                           |
-| --------------- | -------------------------------- |
-| Review Speed    | Faster PR reviews                |
-| Quality         | Earlier issue detection          |
-| Maintainability | Reduced technical debt           |
-| Onboarding      | Faster junior ramp-up            |
-| Architecture    | Consistent engineering standards |
-| Productivity    | Reduced repetitive review effort |
-
----
-
-# 15. Future Enhancements
+# Future Enhancements
 
 * GitHub Pull Request integration
 * Android Studio plugin
@@ -439,7 +359,7 @@ Potential benefits for engineering teams:
 
 ---
 
-# 16. Why I Chose This Problem
+# Why I Chose This Problem
 
 As an Android engineer working on enterprise and consumer applications, I have experienced the challenges of:
 
@@ -455,52 +375,72 @@ I believe AI can significantly improve engineering workflows when used as a coll
 
 ---
 
-# 17. Public Resources
+# Public Resources
 
 ## GitHub Repository
 
-Example:
 [https://github.com/emtanveer/ai-pair-engineer](https://github.com/emtanveer/ai-pair-engineer)
 
 ---
 
-# 18. Screenshots to Include
+# Screenshots
 
-Recommended screenshots:
+## Example AI Review
 
-1. Prompt input example
-2. AI review output
-3. Refactored code suggestion
-4. Architecture recommendation example
-
-You can generate these easily using ChatGPT or a simple Streamlit prototype.
+![Review Output](screenshots/review-output-1.png)
 
 ---
 
-# 19. Optional Lightweight Prototype
+## Architecture Feedback
 
-A lightweight prototype can be built using:
+![Architecture Feedback 1](screenshots/architecture-feedback\(1\).png)
 
-* Streamlit
-* OpenAI API
-* GitHub repository input
-* Prompt templates
-
-Example workflow:
-
-1. Paste Kotlin code
-2. Select review type
-3. AI generates review
-4. Export recommendations
+![Architecture Feedback 2](screenshots/architecture-feedback\(2\).png)
 
 ---
 
-# 20. 100-Word Summary For Application Form
+## Refactor Suggestions
+
+![Refactor Suggestion 1](screenshots/refactor-suggestion\(1\).png)
+
+![Refactor Suggestion 2](screenshots/refactor-suggestion\(2\).png)
+
+![Refactor Suggestion 3](screenshots/refactor-suggestion\(3\).png)
+
+---
+
+# Repository Structure
+
+```text
+ai-pair-engineer-careem/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── prompts/
+│   └── android_review_prompt.txt
+│
+├── examples/
+│   └── bad_viewmodel_example.kt
+│
+├── screenshots/
+│   ├── review-output-1.png
+│   ├── architecture-feedback(1).png
+│   ├── architecture-feedback(2).png
+│   ├── refactor-suggestion(1).png
+│   ├── refactor-suggestion(2).png
+│   └── refactor-suggestion(3).png
+```
+
+---
+
+# 100-Word Summary For Application Form
 
 AI Pair Engineer is a lightweight AI-assisted Android development companion focused on improving code quality, architecture consistency, and engineering velocity. The assistant reviews Kotlin code before human review and provides actionable recommendations related to CLEAN Architecture, Coroutines, Flow, Dependency Injection, Compose state management, scalability, and testing. The goal is to reduce review cycles, catch architectural issues earlier, and improve maintainability across large mobile codebases. I designed the concept around real-world Android engineering challenges I’ve experienced while leading and contributing to enterprise and consumer applications across distributed Agile teams.
 
 ---
 
-# 21. Final Note
+# Final Note
 
 The assistant is designed to augment engineering teams rather than replace human code review, focusing on repetitive architectural validation, rapid feedback loops, and scalable engineering quality.
